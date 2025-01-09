@@ -1,0 +1,67 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^mobile/list/$   controller/RestController.php?view=all [nc,qsa]
+
+RewriteRule ^mobile/create/$   controller/RestController.php?view=create [nc,qsa]
+RewriteRule ^mobile/create$   controller/RestController.php?view=create [nc,qsa]
+
+RewriteRule ^user/list/$   controller/UserController.php?page_key=list [nc,qsa]
+RewriteRule ^user/list$   controller/UserController.php?page_key=list [nc,qsa]
+RewriteRule ^user/login$   controller/UserController.php?page_key=login [nc,qsa]
+
+RewriteRule ^product/list/$   controller/ProductController.php?page_key=list [nc,qsa]
+RewriteRule ^product/list$   controller/ProductController.php?page_key=list [nc,qsa]
+
+RewriteRule ^product/create/$   controller/ProductController.php?page_key=create [nc,qsa]
+RewriteRule ^product/create$   controller/ProductController.php?page_key=create [nc,qsa]
+
+RewriteRule ^product/edit/$   controller/ProductController.php?page_key=edit [nc,qsa]
+RewriteRule ^product/edit$   controller/ProductController.php?page_key=edit [nc,qsa]
+
+RewriteRule ^product/delete/$   controller/ProductController.php?page_key=delete [nc,qsa]
+RewriteRule ^product/delete$   controller/ProductController.php?page_key=delete [nc,qsa]
+
+RewriteRule ^product/get/$   controller/ProductController.php?page_key=get [nc,qsa]
+RewriteRule ^product/get$   controller/ProductController.php?page_key=get [nc,qsa]
+
+RewriteRule ^product/decrementqty/$   controller/ProductController.php?page_key=decrementqty [nc,qsa]
+RewriteRule ^product/decrementqty$   controller/ProductController.php?page_key=decrementqty [nc,qsa]
+
+RewriteRule ^history/create/$   controller/ProductHistoryController.php?page_key=create [nc,qsa]
+RewriteRule ^history/create$   controller/ProductHistoryController.php?page_key=create [nc,qsa]
+
+RewriteRule ^history/totalqty/$   controller/ProductHistoryController.php?page_key=totalqty [nc,qsa]
+RewriteRule ^history/totalqty$   controller/ProductHistoryController.php?page_key=totalqty [nc,qsa]
+
+RewriteRule ^cart/list/$   controller/CartController.php?page_key=list [nc,qsa]
+RewriteRule ^cart/list$   controller/CartController.php?page_key=list [nc,qsa]
+
+RewriteRule ^cart/create/$   controller/CartController.php?page_key=create [nc,qsa]
+RewriteRule ^cart/create$   controller/CartController.php?page_key=create [nc,qsa]
+
+RewriteRule ^cart/edit/$   controller/CartController.php?page_key=edit [nc,qsa]
+RewriteRule ^cart/edit$   controller/CartController.php?page_key=edit [nc,qsa]
+
+RewriteRule ^cart/delete/$   controller/CartController.php?page_key=delete [nc,qsa]
+RewriteRule ^cart/delete$   controller/CartController.php?page_key=delete [nc,qsa]
+
+RewriteRule ^cart/get/$   controller/CartController.php?page_key=get [nc,qsa]
+RewriteRule ^cart/get$   controller/CartController.php?page_key=get [nc,qsa]
+
+RewriteRule ^saletrans/create/$   controller/SaletransController.php?page_key=create [nc,qsa]
+RewriteRule ^saletrans/create$   controller/SaletransController.php?page_key=create [nc,qsa]
+
+RewriteRule ^saletrans/updatetotamount/$   controller/SaletransController.php?page_key=updatetotamount [nc,qsa]
+RewriteRule ^saletrans/updatetotamount$   controller/SaletransController.php?page_key=updatetotamount [nc,qsa]
+
+RewriteRule ^saletrans/latestid/$   controller/SaletransController.php?page_key=latestid [nc,qsa]
+RewriteRule ^saletrans/latestid$   controller/SaletransController.php?page_key=latestid [nc,qsa]
+
+RewriteRule ^saleitems/create/$   controller/SaleitemsController.php?page_key=create [nc,qsa]
+RewriteRule ^saleitems/create$   controller/SaleitemsController.php?page_key=create [nc,qsa]
+
+
+

@@ -1,0 +1,1 @@
+SELECT * FROM kleitmca_smart_city_user_account WHERE mno = 9035292096 AND password = '123456'
